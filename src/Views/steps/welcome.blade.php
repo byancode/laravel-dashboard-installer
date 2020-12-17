@@ -26,7 +26,7 @@
     </p>
     <p class="pb-4 text-gray-800">
         Need more help?
-        <a class="text-blue-500 hover:underline" href="https://docs.dacoto.com/laravel-dashboard/getting-started/installation/installation-wizard" target="_blank">See installation guide</a>.
+        <a class="text-blue-500 hover:underline" href="https://help.mobidonia.com/" target="_blank">See installation guide</a>.
     </p>
     <div class="flex justify-end">
         <a href="{{ route('LaravelInstaller::install.server') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">

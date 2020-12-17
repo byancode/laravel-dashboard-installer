@@ -12,6 +12,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Cache;
 
 class InstallDatabaseController extends Controller
 {
@@ -57,13 +58,19 @@ class InstallDatabaseController extends Controller
             ],
         ]);
         try {
-            DB::connection()->getPdo();
+            
+            
             EnvEditor::setEnv('DB_HOST', $request->input('database_hostname'));
             EnvEditor::setEnv('DB_PORT', $request->input('database_port'));
             EnvEditor::setEnv('DB_DATABASE', $request->input('database_name'));
             EnvEditor::setEnv('DB_USERNAME', $request->input('database_username'));
             EnvEditor::setEnv('DB_PASSWORD', $request->input('database_password'));
             EnvEditor::setEnv('DB_PREFIX', $request->input('database_prefix'));
+            Artisan::call('config:clear');
+            Artisan::call('cache:clear');
+            Cache::flush();
+            DB::connection()->getPdo();
+            
             return redirect()->route('LaravelInstaller::install.migrations');
         } catch (Exception $e) {
             return view('installer::steps.database', ['values' => $request->all(), 'error' => $e->getMessage()]);

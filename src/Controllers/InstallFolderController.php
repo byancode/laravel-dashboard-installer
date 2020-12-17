@@ -35,6 +35,7 @@ class InstallFolderController extends Controller
             'storage.framework' => (int) File::chmod('../storage/framework') >= 775,
             'storage.logs' => (int) File::chmod('../storage/logs') >= 775,
             'bootstrap.cache' => (int) File::chmod('../bootstrap/cache') >= 775,
+            'public.uploads' => (int) File::chmod('../public/uploads') >= 775,
         ];
     }
 }

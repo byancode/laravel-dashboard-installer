@@ -33,21 +33,20 @@
                 Use the following link to log into the administration area:
             </p>
             <p class="pb-3">
-                <a class="text-blue-500 hover:underline" href="{{ $path }}/auth/login">{{ $path }}/auth/login</a>
+                <a class="text-blue-500 hover:underline" href="{{ $path }}/login">{{ $path }}/login</a>
             </p>
             <p class="pb-3 text-gray-800">
-                Email: <b>admin@admin.com</b>
+                Email: <b>admin@example.com</b>
                 <br>
-                Password: <b>12345678</b>
+                Password: <b>secret</b>
             </p>
         </div>
     </div>
     <p class="pb-3 text-gray-800">
         <b>Support and questions</b>
         <br>
-        If you need support, please send me an email using the contact form on my envato user page. I usually respond to support requests within 24 hours so please feel free to contact me with
-        problems of any kind or even simple questions, I don’t mind responding.
+           If you need support, please send us a ticket on our support portal.
         <br>
-        <a class="text-blue-500 hover:underline" href="https://codecanyon.net/user/dacoto" target="_blank" rel="nofollow">https://codecanyon.net/user/dacoto</a>
+        <a class="text-blue-500 hover:underline" href="https://help.mobidonia.com/" target="_blank" rel="nofollow">Documentation and Support</a>
     </p>
 @endsection
