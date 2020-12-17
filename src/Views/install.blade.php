@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@1/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="h-screen w-screen bg-cover bg-no-repeat bg-center" style="background-image: url('/images/default/background.jpg');">
+<div class="h-screen w-screen bg-cover bg-no-repeat bg-center" style="background-image: url('/default/cover.jpg');">
     <div class="flex h-screen py-6">
         <div class="container m-auto">
             <div class="bg-white shadow overflow-hidden sm:rounded-lg">
