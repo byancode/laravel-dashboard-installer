@@ -1,5 +1,5 @@
 {
-    "name": "dacoto/laravel-dashboard-installer",
+    "name": "mobidonia/laravel-dashboard-installer",
     "description": "Laravel dashboard auto-installer package",
     "type": "library",
     "require": {
@@ -25,6 +25,10 @@
         {
             "name": "David Cortés",
             "email": "cortestoledanodavid@gmail.com"
+        },
+        {
+            "name": "Daniel Dimov - fork",
+            "email": "daniel@mobidonia.com
         }
     ]
 }
