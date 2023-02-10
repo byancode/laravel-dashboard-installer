@@ -54,7 +54,7 @@ class InstallDatabaseController extends Controller
                         'password' => $request->input('database_password'),
                         'prefix' => $request->input('database_prefix'),
                         'options' => array_filter([
-                            \PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+                            \PDO::MYSQL_ATTR_SSL_CA => config('database.attr_ssl_ca'),
                         ]),
                     ]),
                 ],
